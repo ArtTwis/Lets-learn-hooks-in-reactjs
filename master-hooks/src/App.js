@@ -1,7 +1,7 @@
 import './App.css';
-import UseState from './components/UseState';
-import UseReducerHook from './components/UseReducerHook';
-import UseReducerLikeRedux from './components/UseReducerLikeRedux';
+import UseState from './components-useReducer/UseState';
+import UseReducerHook from './components-useReducer/UseReducerHook';
+import UseReducerLikeRedux from './components-useReducer/UseReducerLikeRedux';
 
 function App() {
   return (

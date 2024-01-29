@@ -20,6 +20,10 @@ const UseReducerHook = () => {
     setFormInputs({[name]: event.target.value });
   };
 
+  const handleClick = () => {
+    console.log('formInputs :>>', {formInputs});
+  }
+
   return (
     <div className="flex flex-col justify-center items-center">
       <span className="text-3xl font-bold">useReducer</span>
@@ -45,7 +49,7 @@ const UseReducerHook = () => {
           placeholder="Phone Number"
           onChange={handleInputChange("phoneNumber")}
         />
-        <button className={inputField}>Submit</button>
+        <button className={inputField} onClick={handleClick}>Submit</button>
       </div>
     </div>
   );
